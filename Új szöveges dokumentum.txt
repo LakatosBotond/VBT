@@ -1,0 +1,207 @@
+ Rectangle 2 
+
+position absolute;
+width 1440px;
+height 133px;
+left 0px;
+top 1228px;
+
+background #D9D9D9;
+
+
+ Rectangle 3 
+
+position absolute;
+width 1296px;
+height 370px;
+left 72px;
+top 152px;
+
+background #D9D9D9;
+
+
+ Af1 
+
+position absolute;
+width 468px;
+height 235px;
+left 158px;
+top 581px;
+
+
+
+ Airmax 
+
+position absolute;
+width 469px;
+height 235px;
+left 812px;
+top 581px;
+
+
+
+ Tn 
+
+position absolute;
+width 468px;
+height 235px;
+left 158px;
+top 904px;
+
+
+
+ J4 
+
+position absolute;
+width 468px;
+height 235px;
+left 812px;
+top 904px;
+
+
+
+ image 4 
+
+position absolute;
+width 425px;
+height 152px;
+left 169px;
+top 605px;
+
+background url(image.png);
+
+
+ image 16 
+
+position absolute;
+width 395px;
+height 214px;
+left 849px;
+top 574px;
+
+background url(image.png);
+
+
+ image 23 
+
+position absolute;
+width 404px;
+height 267px;
+left 190px;
+top 872px;
+
+background url(image.png);
+
+
+ image 28 
+
+position absolute;
+width 370px;
+height 189px;
+left 847px;
+top 917px;
+
+background url(image.png);
+background-blend-mode darken;
+
+
+ image 29 
+
+position absolute;
+width 438px;
+height 133px;
+left 20px;
+top 1254px;
+
+background url(image.png), url(image.png), url(image.png);
+background-blend-mode darken;
+
+
+ image 
+
+position absolute;
+width 179px;
+height 115px;
+left 78px;
+top 0px;
+
+
+
+ Group 7 
+
+position absolute;
+width 1440px;
+height 133px;
+left 0px;
+top 0px;
+
+
+
+ Főoldal 
+
+position absolute;
+width 158px;
+height 49px;
+left 808px;
+top 57px;
+
+font-family 'Inter';
+font-style normal;
+font-weight 400;
+font-size 24px;
+line-height 29px;
+
+color #000000;
+
+
+
+ Szolgáltatásunk 
+
+position absolute;
+width 184px;
+height 49px;
+left 1171px;
+top 58px;
+
+font-family 'Inter';
+font-style normal;
+font-weight 400;
+font-size 24px;
+line-height 29px;
+
+color #000000;
+
+
+
+ image 31 
+
+position absolute;
+width 260px;
+height 139px;
+left 298px;
+top 11px;
+
+background url(image.png), url(image.png);
+background-blend-mode darken;
+
+
+ Frame 1 
+
+position absolute;
+width 685px;
+height 63px;
+left 720px;
+top 28px;
+
+
+
+ image 35 
+
+position absolute;
+width 66px;
+height 73px;
+left 626px;
+top 34px;
+
+background url(image.png);
+background-blend-mode darken;
