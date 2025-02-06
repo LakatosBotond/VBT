@@ -107,3 +107,65 @@ max-width: 50px;
     float: none;
   }
 }
+
+p{
+  margin-right: 100px;
+}
+.formazas{
+  margin: 50px;
+  border: 30px;
+  padding: 15px;
+}
+.forma{
+  background-color: white;
+}
+
+.blog{
+  float: left;
+}
+
+.otlet{
+  float: left;
+}
+
+.rolunk{
+  float: left;
+}
+
+.egyvb{
+  float: left;
+}
+
+.jovonk{
+  float: left;
+}
+
+.kulonlegesseg{
+  float: left;
+}
+
+.ajanlat{
+  float: left;
+}
+
+.szoveg{
+  margin-left: 30px;
+  width: 1000px;
+  margin: 20px;
+  border: 15px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+
+.vbt{
+  margin: 30px;
+  border: 20px;
+  padding: 5px;
+  width: 250px;
+  height: 250px;
+  float: right;
+  margin-top: -220px;
+  margin-right: -250px;
+
+}
