@@ -18,10 +18,23 @@
 }
   
   /* Style the logo link */
-.header a.logo {
+  .header a.logo1 {
     font-size: 25px;
     font-weight: bold;
-}
+    margin-left: 50px ;
+  }
+  .header a.logo2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 350px;
+  
+  }
+  .header a.logo3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 350px;
+  
+  }
   
   /* Change the background color on mouse-over */
 .header a:hover {
@@ -38,13 +51,61 @@
   /* Float the link section to the right */
 .header-right {
     float: right;
+    margin-top: 10px;
 }
 
 #img1{
-    max-width: 75px;
+  max-width: 65px;
 }
 #img2{
-  max-width: 100px;
+max-width: 90px;
+}
+#img3{
+max-width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  background-color: turquoise;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-left {
+  font-size: 14px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
 }
 @media screen and (max-width: 500px) {
     .header a {
