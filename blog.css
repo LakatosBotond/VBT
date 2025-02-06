@@ -42,11 +42,9 @@
 
 #img1{
     max-width: 75px;
-    margin-left: 20px;
 }
 #img2{
   max-width: 100px;
-  margin-left: 20px;
 }
 @media screen and (max-width: 500px) {
     .header a {
