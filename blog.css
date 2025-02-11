@@ -16,7 +16,10 @@
     line-height: 25px;
     border-radius: 4px;
 }
-  
+#fogif{
+  width: 100%;
+  height: 100%;
+}
   /* Style the logo link */
   .header a.logo1 {
     font-size: 25px;
