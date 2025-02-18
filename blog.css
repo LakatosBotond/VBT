@@ -4,6 +4,9 @@
     background-color: #f1f1f1;
     padding: 20px 10px;
 }
+body{
+  height: 2800px;
+}
   
   /* Style header links */
 .header a {
@@ -119,4 +122,25 @@ max-width: 50px;
     .header-right {
       float: none;
     }
+}
+
+.szoveg{
+  width: 750px;
+  margin: 50px;
+  border: 30px;
+  padding: 15px;
+}
+
+.formazas{
+  margin: 40px;
+  border: 20px;
+  padding: 10px;
+}
+
+.ajanlat{
+  text-align: center;
+}
+.vb{
+  color: black;
+  text-decoration: none;
 }

@@ -4,7 +4,9 @@
     background-color: #f1f1f1;
     padding: 20px 10px;
   }
-  
+  body{
+    height: 1500px;
+  }
   /* Style header links */
   .header a {
     float: left;
@@ -175,6 +177,32 @@
   }
   
   .felugroablak{
-
+    width: auto;
+    margin: auto;
+    border: 30px;
+    padding: 15px;
+    
   }
   
+.szolgaltatas{
+  width: auto;
+  margin: auto;
+  border: 30px;
+  padding: 15px;
+
+}
+.szolgaltatas2{
+  width: 100%;
+  margin-left: 750px;
+  margin: auto;
+  border: 30px;
+  padding: 15px;  
+  
+}
+
+.futar{
+  width: 35px;
+  height: 35px;
+  margin-left: 300px;
+  margin-top: -110px;
+}
