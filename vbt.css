@@ -106,7 +106,7 @@ h1{
 }
 .jordan4{
   max-width: 40%;
-  width: 650px;
+  width: 650px; 
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
