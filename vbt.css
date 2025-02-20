@@ -107,6 +107,8 @@ h1{
 .jordan4{
   max-width: 40%;
   width: 650px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 /* Style the active/current link*/
 .header a.active {
