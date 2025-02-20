@@ -4,6 +4,7 @@
     background-color: #f1f1f1;
     padding: 20px 10px;
   }
+  
   body{
     height: 1500px;
   }
@@ -103,16 +104,26 @@
     text-decoration: underline;
   }
   
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1350px) {
     .header a {
       float: none;
       display: block;
-      text-align: left;
+      text-align: center;
     }
     .header-right {
       float: none;
     }
+    a.logo1{
+      display: none;
+    }
+    a.logo2{
+      display: none;
+    }
+    a.logo3{
+      display: none;
+    }
   }
+  
   
   p{
     margin-right: 100px;
