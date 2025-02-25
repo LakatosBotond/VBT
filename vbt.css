@@ -99,9 +99,37 @@ h1{
   max-width: 40%;
   width: 650px;
 }
+
+#dunkf{
+  transform: translateY(40px);
+}
+
+#dunkg{
+  transform: translateY(35px);
+}
+#dunkh{
+  transform: translateY(35px);
+}
 .AF1{
   max-width: 40%;
   width: 650px;
+}
+
+#af1f{
+  transform: translateY(45px);
+}
+
+#af1g{
+  transform: translateY(60px);
+  max-width: 35%;
+}
+
+#af1h{
+  transform: translateY(5px);
+}
+
+#af1j{
+  transform: translateY(-10px);
 }
 .airmax{
   max-width: 40%;
@@ -116,14 +144,21 @@ h1{
 
 }
 #airmaxh{
-  transform: scaleY(500px);
-
+  transform: translateY(-35px);
 }
 .jordan4{
   max-width: 40%;
   width: 650px; 
   -webkit-transform: scaleX(-1);
   transform: scaleX(1 );
+}
+
+#j4f{
+  transform: translateY(45px);
+}
+
+#j4g{
+  transform: translateY(40px);
 }
 /* Style the active/current link*/
 .header a.active {
