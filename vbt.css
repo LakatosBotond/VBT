@@ -66,7 +66,7 @@ h1{
   border: solid;
   height: 250px;
   border-radius: 20px;
-}
+} 
 .felsojobb{
   float: right;
   max-width: 50%;
@@ -91,6 +91,9 @@ h1{
   padding-top: 50px;
   height: 250px;
   border-radius: 20px;
+}
+.eltunos{
+  display: none;
 }
 .dunk{
   max-width: 40%;
@@ -191,6 +194,9 @@ max-width: 50px;
   }
   a.logo3{
     display: none;
+  }
+  .eltunos{
+    display: block;
   }
 }
 
