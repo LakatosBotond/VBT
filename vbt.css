@@ -107,14 +107,23 @@ h1{
   max-width: 40%;
   width: 650px;
 }
+#airmaxf{
+  transform: scaleX(1);
+}
+#airmaxg{
+  
+  transform: scaleX(-1);
+
+}
+#airmaxh{
+  transform: scaleY(500px);
+
+}
 .jordan4{
   max-width: 40%;
   width: 650px; 
-}
-@media only screen and (max-width: 1000px) {
-  .main{
-    flex-direction: column;
-  }
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(1 );
 }
 /* Style the active/current link*/
 .header a.active {
