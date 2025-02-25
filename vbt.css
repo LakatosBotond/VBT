@@ -66,7 +66,7 @@ h1{
   border: solid;
   height: 250px;
   border-radius: 20px;
-}
+} 
 .felsojobb{
   float: right;
   max-width: 50%;
@@ -92,6 +92,9 @@ h1{
   height: 250px;
   border-radius: 20px;
 }
+.eltunos{
+  display: none;
+}
 .dunk{
   max-width: 40%;
   width: 650px;
@@ -107,8 +110,11 @@ h1{
 .jordan4{
   max-width: 40%;
   width: 650px; 
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+}
+@media only screen and (max-width: 1000px) {
+  .main{
+    flex-direction: column;
+  }
 }
 /* Style the active/current link*/
 .header a.active {
@@ -182,6 +188,9 @@ max-width: 50px;
   }
   a.logo3{
     display: none;
+  }
+  .eltunos{
+    display: block;
   }
 }
 
