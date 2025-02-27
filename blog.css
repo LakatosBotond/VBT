@@ -106,6 +106,9 @@ max-width: 50px;
 .footer-right a:hover {
   text-decoration: underline;
 }
+.eltunos{
+  display: none;
+}
 @media screen and (max-width: 1350px) {
   .header a {
     float: none;
@@ -123,6 +126,9 @@ max-width: 50px;
   }
   a.logo3{
     display: none;
+  }
+  .eltunos{
+    display: block;
   }
 }
 

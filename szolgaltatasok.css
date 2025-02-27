@@ -42,6 +42,9 @@
     width: 100%;
     height: 100%;
   }
+  .eltunos{
+    display: none;
+  }
   
   /* Change the background color on mouse-over */
   .header a:hover {
@@ -121,6 +124,9 @@
     }
     a.logo3{
       display: none;
+    }
+    .eltunos{
+      display: block;
     }
   }
   
