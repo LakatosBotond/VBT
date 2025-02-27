@@ -149,6 +149,9 @@ max-width: 50px;
 }
 
 @media only screen and (max-width: 1000px) {
+  body{
+    height: 3400px;
+  }
   .main {
     display: flex;
     flex-direction: column;
@@ -161,9 +164,17 @@ max-width: 50px;
     border: 30px;
     padding: 15px;
   }
+  .ajanlat{
+
+    text-align: center;
+    max-width: 80%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
+  body{
+    height: 4100px;
+  }
   .main {
     display: flex;
     flex-direction: column;
@@ -176,6 +187,11 @@ max-width: 50px;
     border: 30px;
     padding: 15px;
     text-align: left;
+  }
+  .ajanlat{
+
+    text-align: center;
+    max-width: 80%;
   }
 }
 
@@ -194,10 +210,17 @@ max-width: 50px;
     text-align: left;
     float: left;
   }
+  .ajanlat{
+
+    text-align: center;
+    max-width: 80%;
+  }
 }
 
 @media only screen and (max-width: 450px) {
-
+  body{
+    height: 3800px;
+  }
   .main {
     display: flex;
     flex-direction: column;
@@ -212,9 +235,17 @@ max-width: 50px;
     text-align: left;
     float: left;
   }
+  .ajanlat{
+
+    text-align: center;
+    max-width: 80%;
+  }
 }
 
 @media only screen and (max-width: 380px) {
+  body{
+    height: 3800px;
+  }
   .main {
     display: flex;
     flex-direction: column;
