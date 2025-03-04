@@ -5,13 +5,12 @@ document.addEventListener("DOMContentLoaded", function () {
         message.style.position = "fixed";
         message.style.top = "10px";
         message.style.right = "10px";
-        message.style.backgroundColor = "black";
-        message.style.color = "white";
+        message.style.backgroundColor = "white";
+        message.style.color = "black";
         message.style.padding = "10px 20px";
         message.style.borderRadius = "5px";
         message.style.fontSize = "16px";
-        message.style.zIndex = "1000";
-        
+                
         document.body.appendChild(message);
 
         setTimeout(() => {
