@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-    function kosarba() {
+    function kosarba(shoeName) {
         let message = document.createElement("div");
-        message.textContent = "Kosárba rakva";
+        message.textContent = `Kosárba rakva: ${shoeName}`;
         message.style.position = "fixed";
         message.style.top = "10px";
         message.style.right = "10px";
@@ -19,14 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000);
     }
 
-
     let buttons = document.querySelectorAll(".felsobal, .felsojobb, .alsobal, .alsojobb");
-
 
     buttons.forEach(button => {
         button.addEventListener("click", function (event) {
-            event.preventDefault(); 
-            kosarba();
+            event.preventDefault();
+            
+            
+            let shoeImage = button.querySelector("img");
+            let shoeName = shoeImage ? shoeImage.id : "Unknown Shoe"; 
+            
+            kosarba(shoeName);
         });
     });
 });

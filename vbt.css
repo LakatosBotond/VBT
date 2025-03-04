@@ -136,14 +136,14 @@ h1{
 
 }
 
-#dunkf{
+#dunk_olive{
   transform: translateY(40px);
 }
 
-#dunkg{
+#dunk_redwhite{
   transform: translateY(35px);
 }
-#dunkh{
+#dunk_vintage{
   transform: translateY(35px);
 }
 .AF1{
@@ -151,20 +151,20 @@ h1{
   width: 650px;
 }
 
-#af1f{
+#af1_black_supreme{
   transform: translateY(45px);
 }
 
-#af1g{
+#af1_supreme{
   transform: translateY(60px);
   max-width: 35%;
 }
 
-#af1h{
+#af1_tiffany{
   transform: translateY(5px);
 }
 
-#af1j{
+#af1_black_and_blue{
   transform: translateY(-10px);
 }
 .airmax{
@@ -174,12 +174,12 @@ h1{
 #airmaxf{
   transform: scaleX(1);
 }
-#airmaxg{
+#airmax_tnblackwhite{
   
   transform: scaleX(-1);
 
 }
-#airmaxh{
+#airmax_purple{
   transform: translateY(-35px);
 }
 .jordan4{
@@ -189,20 +189,18 @@ h1{
   transform: scaleX(1 );
 }
 
-#j4f{
+#j4_hyper_violet{
   transform: translateY(45px);
 }
 
-#j4g{
+#j4_military{
   transform: translateY(40px);
 }
-/* Style the active/current link*/
 .header a.active {
   background-color: dodgerblue;
   color: white;
 }
 
-/* Float the link section to the right */
 .header-right {
   float: right;
   margin-top: 10px;
