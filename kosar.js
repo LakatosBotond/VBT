@@ -1,20 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-    function kosarba(shoeName) {
-        let message = document.createElement("div");
-        message.textContent = `Kosárba rakva: ${shoeName}`;
-        message.style.position = "fixed";
-        message.style.top = "10px";
-        message.style.right = "10px";
-        message.style.backgroundColor = "white";
-        message.style.color = "black";
-        message.style.padding = "10px 20px";
-        message.style.borderRadius = "5px";
-        message.style.fontSize = "16px";
-                
-        document.body.appendChild(message);
+    function kosarbarak(ciponev) {
+        let uzenet = document.createElement("div");
+        uzenet.textContent = `Kosárba helyezve:: ${ciponev}`;
+        uzenet.style.position = "fixed";
+        uzenet.style.top = "10px";
+        uzenet.style.right = "10px";
+        uzenet.style.backgroundColor = "black";
+        uzenet.style.color = "white";
+        uzenet.style.padding = "10px 20px";
+        uzenet.style.borderRadius = "5px";
+        uzenet.style.fontSize = "16px";
+        uzenet.style.zIndex = "1000";
+        
+        document.body.appendChild(uzenet);
 
         setTimeout(() => {
-            message.remove();
+            uzenet.remove();
         }, 1000);
     }
 
@@ -23,12 +24,34 @@ document.addEventListener("DOMContentLoaded", function () {
     buttons.forEach(button => {
         button.addEventListener("click", function (event) {
             event.preventDefault();
-            
-            
             let shoeImage = button.querySelector("img");
-            let shoeName = shoeImage ? shoeImage.id : "Unknown Shoe"; 
+            let ciponev = shoeImage ? shoeImage.id : "Unknown Shoe";
             
-            kosarba(shoeName);
+            let cartItems = JSON.parse(sessionStorage.getItem("kosar")) || [];
+            cartItems.push(ciponev);
+            sessionStorage.setItem("kosar", JSON.stringify(cartItems));
+
+            kosarbarak(ciponev);
         });
     });
+
+    if (window.location.pathname.includes("kosar.html")) {
+        displayCart();
+
+        document.getElementById("clearCart").addEventListener("click", function () {
+            sessionStorage.removeItem("kosar");
+            displayCart();
+        });
+    }
+
+    function displayCart() {
+        let cartItems = JSON.parse(sessionStorage.getItem("kosar")) || [];
+        let cartContainer = document.querySelector(".box");
+        
+        if (cartItems.length === 0) {
+            cartContainer.innerHTML = "<p>A kosarad üres.</p>";
+        } else {
+            cartContainer.innerHTML = "<ul>" + cartItems.map(item => `<li>${item}</li>`).join("") + "</ul>";
+        }
+    }
 });
