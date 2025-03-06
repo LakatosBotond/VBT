@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
         uzenet.style.padding = "10px 20px";
         uzenet.style.borderRadius = "5px";
         uzenet.style.fontSize = "16px";
-        uzenet.style.zIndex = "1000";
         
         document.body.appendChild(uzenet);
 
@@ -19,39 +18,39 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 1000);
     }
 
-    let buttons = document.querySelectorAll(".felsobal, .felsojobb, .alsobal, .alsojobb");
+    let gombok = document.querySelectorAll(".felsobal, .felsojobb, .alsobal, .alsojobb");
 
-    buttons.forEach(button => {
+    gombok.forEach(button => {
         button.addEventListener("click", function (event) {
             event.preventDefault();
-            let shoeImage = button.querySelector("img");
-            let ciponev = shoeImage ? shoeImage.id : "Unknown Shoe";
+            let cipoKep = button.querySelector("img");
+            let ciponev = cipoKep ? cipoKep.id : "Nem található cipő";
             
-            let cartItems = JSON.parse(sessionStorage.getItem("kosar")) || [];
-            cartItems.push(ciponev);
-            sessionStorage.setItem("kosar", JSON.stringify(cartItems));
+            let KosarCuccok = JSON.parse(sessionStorage.getItem("kosar")) || [];
+            KosarCuccok.push(ciponev);
+            sessionStorage.setItem("kosar", JSON.stringify(KosarCuccok));
 
             kosarbarak(ciponev);
         });
     });
 
     if (window.location.pathname.includes("kosar.html")) {
-        displayCart();
+        kosarmutat();
 
-        document.getElementById("clearCart").addEventListener("click", function () {
+        document.getElementById("KosarUrit").addEventListener("click", function () {
             sessionStorage.removeItem("kosar");
-            displayCart();
+            kosarmutat();
         });
     }
 
-    function displayCart() {
-        let cartItems = JSON.parse(sessionStorage.getItem("kosar")) || [];
+    function kosarmutat() {
+        let KosarCuccok = JSON.parse(sessionStorage.getItem("kosar")) || [];
         let cartContainer = document.querySelector(".box");
         
-        if (cartItems.length === 0) {
+        if (KosarCuccok.length === 0) {
             cartContainer.innerHTML = "<p>A kosarad üres.</p>";
         } else {
-            cartContainer.innerHTML = "<ul>" + cartItems.map(item => `<li>${item}</li>`).join("") + "</ul>";
+            cartContainer.innerHTML = "<ul>" + KosarCuccok.map(item => `<li>${item}</li>`).join("") + "</ul>";
         }
     }
 });
