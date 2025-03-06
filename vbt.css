@@ -20,6 +20,36 @@ body{
   line-height: 25px;
   border-radius: 4px;
 }
+.shoe-container {
+  position: relative;
+  display: inline-block;
+}
+
+.shoe-image {
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.shoe-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.shoe-container:hover .shoe-image {
+  opacity: 0;
+}
+
+.shoe-container:hover .shoe-info {
+  opacity: 1;
+}
 
 /* Style the logo link */
 .header a.logo1 {
