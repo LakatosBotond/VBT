@@ -137,7 +137,20 @@ a:link {
   width: 650px;
 
 }
+#kosarTartalom{
+  text-align: center;
+}
+.box{
+  text-align: center;
+}
+.container {
+  width: 100%;
+  text-align: center;
+}
 
+#KosarUrit {
+  padding: 10px 20px;
+}
 #dunk_olive{
   transform: translateY(40px);
 }
