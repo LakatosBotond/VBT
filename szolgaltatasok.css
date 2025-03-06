@@ -1,4 +1,3 @@
-/* Style header grey background, padding */
 .header {
     overflow: hidden;
     background-color: #f1f1f1;
@@ -8,7 +7,6 @@
   body{
     height: 1500px;
   }
-  /* Style header links */
   .header a {
     float: left;
     color: black;
@@ -20,7 +18,6 @@
     border-radius: 4px;
   }
   
-  /* Style the logo link */
   .header a.logo1 {
     font-size: 25px;
     font-weight: bold;
@@ -46,19 +43,16 @@
     display: none;
   }
   
-  /* Change the background color on mouse-over */
   .header a:hover {
     background-color: #ddd;
     color: black;
   }
   
-  /* Style the active/current link*/
   .header a.active {
     background-color: dodgerblue;
     color: white;
   }
   
-  /* Float the link section to the right */
   .header-right {
     float: right;
     margin-top: 10px;
