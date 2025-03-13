@@ -54,18 +54,7 @@ body{
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-.shoe-info2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
+
 .shoe-container:hover .shoe-image {
   opacity: 0;
 }
@@ -110,6 +99,7 @@ body{
   margin-top: 200px;
   text-align: center;
 }
+
 h1{
   text-align: center;
   margin-top: 20px;
@@ -230,21 +220,38 @@ a:link {
 
 #AF1_Black_Blue{
   transform: translateY(-30px);
+  margin-top: -15px;
+  margin-bottom: -90px;
 }
 .airmax{
+  max-width: 40%;
+  width: 650px;
+}
+.airmax1{
   max-width: 40%;
   width: 650px;
 }
 #airmaxf{
   transform: scaleX(1);
 }
-#airmax_tnblackwhite{
+#airmax_TN_BlackWhite{
   
   transform: scaleX(-1);
+  margin-top: -15px;
+  margin-bottom: -90px; 
 
 }
-#airmax_purple{
+#airmax_Purple{
   transform: translateY(-35px);
+  margin-top: -15px;
+  margin-bottom: -140px; 
+}
+#airmax_blue{
+  margin-top: -15px;
+  margin-bottom: -90px; 
+}
+#airmax_Spider{
+  transform: translateY(35px);
 }
 .jordan4{
   max-width: 40%;
@@ -265,12 +272,20 @@ a:link {
 #dunk_vintage{
    transform: translateY(30px); 
 }
-#j4_hyper_violet{
-  transform: translateY(45px);
+#j4_hyperViolet{
+  transform: translateY(35px);
+  margin-top: -15px;
+  margin-bottom: 0px;
 }
-
-#j4_military{
+#J4_Military_Blue{
   transform: translateY(40px);
+}
+#J4_University_Blue{
+  transform: translateY(40px);
+}
+#J4_frozen{
+  margin-top: -15px;
+  margin-bottom: -50px;
 }
 .header a.active {
   background-color: dodgerblue;
@@ -360,6 +375,17 @@ max-width: 50px;
     align-items: center;
     width: 100%;
   }
+  #AF1_Black_Blue{
+    padding-top: 40px;
+
+  }
+  .felso3, .group2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+  }
 
   .felsobal, .felsojobb, .alsobal, .alsojobb {
     float: none;
@@ -386,6 +412,12 @@ max-width: 50px;
   }
 
   .felso2, .group2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .felso3, .group2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -434,6 +466,12 @@ max-width: 50px;
     align-items: center;
     width: 100%;
   }
+  .felso3, .group2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
   body{
     height: 1600px;
   }
@@ -462,6 +500,13 @@ max-width: 50px;
   }
 
   .felso2, .group2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+  }
+  .felso3, .group2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -497,6 +542,12 @@ max-width: 50px;
     align-items: center;
     width: 100%;
   }
+  .felso3, .group2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 380px) {
   .felsobal, .felsojobb, .alsobal, .alsojobb {
@@ -516,6 +567,12 @@ max-width: 50px;
   }
 
   .felso2, .group2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .felso3, .group2 {
     display: flex;
     flex-direction: column;
     align-items: center;
