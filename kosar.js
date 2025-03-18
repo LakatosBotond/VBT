@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     function kosarbarak(ciponev) {
         let uzenet = document.createElement("div");
-        uzenet.textContent = `Kosárba helyezve:: ${ciponev}`;
+        uzenet.textContent = `Kosárba helyezve: ${ciponev}`;
         uzenet.style.position = "fixed";
         uzenet.style.top = "10px";
         uzenet.style.right = "10px";
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function (event) {
             event.preventDefault();
             let cipoKep = button.querySelector("img");
-            let ciponev = cipoKep ? cipoKep.id : "Nem található cipő";
+            let ciponev = cipoKep ? cipoKep.alt : "Nem található cipő"; // Use alt instead of id
             
             let KosarCuccok = JSON.parse(sessionStorage.getItem("kosar")) || [];
             KosarCuccok.push(ciponev);
@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
 
 
 
