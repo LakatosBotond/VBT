@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function (event) {
             event.preventDefault();
             let cipoKep = button.querySelector("img");
-            let ciponev = cipoKep ? cipoKep.alt : "Nem található cipő"; // Use alt instead of id
+            let ciponev = cipoKep ? cipoKep.alt : "Nem található cipő";
             
             let KosarCuccok = JSON.parse(sessionStorage.getItem("kosar")) || [];
             KosarCuccok.push(ciponev);
